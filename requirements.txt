@@ -1,0 +1,5 @@
+humanfriendly
+click
+requests
+tqdm
+setuptools
