@@ -15,7 +15,7 @@
 Install the last released version using `pip`:
 
 ```shell
-python3 -m pip install --user -U pyipsw
+python3 -m pip install -U pyipsw
 ```
 
 Or install the latest version from sources:
@@ -23,7 +23,7 @@ Or install the latest version from sources:
 ```shell
 git clone git@github.com:matan1008/pyipsw.git
 cd pyipsw
-python3 -m pip install --user -U -e .
+python3 -m pip install -U -e .
 ```
 
 # Usage
