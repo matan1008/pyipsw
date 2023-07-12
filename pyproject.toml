@@ -1,0 +1,45 @@
+[project]
+name = "pyipsw"
+version = "2.0.3"
+description = "utility created in order to access ipsw.me data easily using python/cli"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+keywords = ["ios", "ipsw", "firmware", "cli"]
+authors = [
+    { name = "matan1008", email = "matan1008@gmail.com" }
+]
+maintainers = [
+    { name = "matan1008", email = "matan1008@gmail.com" }
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dynamic = ["dependencies"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+"Homepage" = "https://github.com/matan1008/pyipsw"
+"Bug Reports" = "https://github.com/matan1008/pyipsw/issues"
+
+[project.scripts]
+pyipsw = "pyipsw.__main__:cli"
+
+[tool.setuptools.packages.find]
+exclude = ["docs*", "tests*"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
