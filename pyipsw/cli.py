@@ -1,7 +1,7 @@
 import click
 from humanfriendly.tables import format_smart_table
 
-from pyipsw.pyipsw import get_devices, DEVICES_FIELDS, get_itunes, ITUNES_FIELDS, download_devices
+from pyipsw.pyipsw import DEVICES_FIELDS, ITUNES_FIELDS, download_devices, get_devices, get_itunes
 
 DEFAULT_DEVICES_COLUMNS = ['device', 'version', 'buildid', 'filename']
 DEFAULT_ITUNES_COLUMNS = ['os', 'version', 'releasedate', 'url']
