@@ -1,9 +1,9 @@
-from functools import lru_cache
 import hashlib
 import os
+from functools import lru_cache
 
-from tqdm import tqdm
 import requests
+from tqdm import tqdm
 
 IPSW_API_FIRMWARES_JSON = 'https://api.ipsw.me/v2.1/firmwares.json/condensed'
 DEVICES_FIELDS = ['device', 'name', 'version', 'buildid', 'url', 'uploaddate', 'size', 'signed', 'sha1sum',
