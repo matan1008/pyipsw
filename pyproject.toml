@@ -1,6 +1,6 @@
 [project]
 name = "pyipsw"
-version = "2.0.3"
+version = "0.0.2"
 description = "utility created in order to access ipsw.me data easily using python/cli"
 readme = "README.md"
 requires-python = ">=3.8"
